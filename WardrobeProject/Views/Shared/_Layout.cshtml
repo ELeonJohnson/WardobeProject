@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -23,11 +23,11 @@
                             Men
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Accessories", "Index", "MensAccessories")</a>
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Bottoms", "Index", "MensBottoms")</a>
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Shoes", "Index", "MensShoes")</a>
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Tops", "Index", "MensTops")</a>
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Outfits", "Index", "MensOutfits")</a>
+                            @Html.ActionLink("Accessories", "Index", "MensAccessories")
+                            @Html.ActionLink("Bottoms", "Index", "MensBottoms")
+                            @Html.ActionLink("Shoes", "Index", "MensShoes")
+                            @Html.ActionLink("Tops", "Index", "MensTops")
+                           @Html.ActionLink("Outfits", "Index", "MensOutfits")
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -35,11 +35,11 @@
                             Women
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Accessories", "Index", "WomensAccessories")</a>
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Bottoms", "Index", "WomensBottoms")</a>
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Shoes", "Index", "WomensShoes")</a>
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Tops", "Index", "WomensTops")</a>
-                            <a class="dropdown-item" href="#">@Html.ActionLink("Outfits", "Index", "WomensOutfits")</a>
+                            @Html.ActionLink("Accessories", "Index", "WomensAccessories")
+                            @Html.ActionLink("Bottoms", "Index", "WomensBottoms")
+                            @Html.ActionLink("Shoes", "Index", "WomensShoes")
+                            @Html.ActionLink("Tops", "Index", "WomensTops")
+                            @Html.ActionLink("Outfits", "Index", "WomensOutfits")
                         </div>
                     </li>
                 </ul>
@@ -51,7 +51,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Outfit Central</p>
         </footer>
     </div>
 

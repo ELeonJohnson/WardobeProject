@@ -229,10 +229,11 @@
     <Content Include="Content\images\saint-laurent-combat-boots.jpg" />
     <Content Include="Content\images\tan-common-projects-chelsea.jpg" />
     <Content Include="Content\images\w-off-white-biker.jpg" />
+    <Content Include="Content\images\wood-background.jpg" />
     <Content Include="Content\images\yeezy-heels.jpg" />
+    <Content Include="Content\site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
