@@ -53,21 +53,32 @@ div.container-fluid {
    
 }
 
-div#home {
-    background-image: url('images/wood-background.jpg');
-}
-
-
-
 h1#home-h1 {
     text-align: center;
     color: var(--black);
 }
 
-div.col-md-12.intro p {
-    color: var(--black);
+.home-h2 {
+    text-align: center;
 }
 
+div.col-md-12.intro p {
+    color: var(--black);
+    margin-bottom: 15%;
+}
+
+a.btn.btn-default.navbar-btn {
+    background-color: var(--greybrown);
+    border-color: var(--greybrown);
+    color: var(--ivory);
+
+}
+
+hr {
+    margin-top: 20%;
+}
+
+ 
 footer p {
     text-align: center;
 }
