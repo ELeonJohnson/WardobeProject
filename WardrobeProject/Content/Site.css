@@ -41,10 +41,11 @@ div.dropdown-menu.show {
 
 }
 
-    div.dropdown-menu.show a {
-        color: var(--ivory);
-        display: block;
-    }
+div.dropdown-menu.show a {
+    color: var(--ivory);
+    display: block;
+
+}
 
 div.dropdown-menu.show a:hover {
     color: var(--nude);
@@ -76,43 +77,93 @@ a.btn.btn-default.navbar-btn {
 
 }
 
-/*Mens Shoe CSS*/
+/*Clothing Display CSS*/
 
-#mshoe-h2 {
+h2 {
     text-align: center;
     color: var(--black);
     margin-bottom: 10%;
 }
 
-#mshoe-create a {
+a {
     color: var(--black);
     
 }
 
-#mshoe-create a:hover {
+a:hover {
     color: var(--blue);
     
 }
 
-#men-shoe-img-row {
+div.row.all {
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
 
-#men-shoe-icons {
+.icons {
     margin-top: 10%;
 }
 
-#men-shoe-icons a:hover {
+.icons a:hover {
     color: var(--black);
 }
 
 
-img#men-shoe-img {
+img.clothing-img {
     width: 250px;
     height: 250px;
 }
 
+/*Create Page CSS*/
+h4 {
+    text-align: center;
+    color: var(--black);
+}
+
+.btn.btn-default {
+    background-color: var(--greybrown);
+    border-color: var(--greybrown);
+    color: var(--ivory);
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/*Delete Page CSS*/
+h3 {
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 5%;
+}
+
+dt {
+    color:var(--black);
+}
+
+dd {
+    color: var(--black);
+    margin-bottom: 2%;
+}
+
+/*Details Page CSS*/
+h4 {
+    margin-bottom: 5%;
+
+}
+
+h1#detail-h1 {
+    margin-bottom: 5%;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+p.p-detail {
+    margin-top: 4%;
+    color: var(--black);
+}
+
+/*Edit Page CSS*/
+
+/*Bottom Of Page CSS*/
 hr {
     margin-top: 20%;
 }
