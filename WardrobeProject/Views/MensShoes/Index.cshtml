@@ -4,23 +4,23 @@
     ViewBag.Title = "Index";
 }
 
-<h2 id="h2-ma">Men's Shoes</h2>
+<h2 id="mshoe-h2">Men's Shoes</h2>
 
-<p>
+<p id="mshoe-create">
     @Html.ActionLink("Create New", "Create")
 </p>
 
-<div class="row">
+<div class="row" id="men-shoe-img-row">
     @foreach (var item in Model)
     {
 
 
         <div class="col-6">
-            <div class="images">
-                <img src="@Html.DisplayFor(modelItem => item.Photo)" alt="Alternate Text" />
+            <div>
+                <img id="men-shoe-img" src="@Html.DisplayFor(modelItem => item.Photo)" alt="Alternate Text" />
             </div>
 
-            <div class="icons">
+            <div id="men-shoe-icons">
                 @Html.ActionLink("Edit", "Edit", new { id = item.MensShoesID }) <img src="https://png.icons8.com/color/20/000000/multi-edit.png"> |
                 @Html.ActionLink("Details", "Details", new { id = item.MensShoesID }) <img src="https://png.icons8.com/ultraviolet/20/000000/search.png"> |
                 @Html.ActionLink("Delete", "Delete", new { id = item.MensShoesID }) <img src="https://png.icons8.com/ultraviolet/20/000000/cancel.png">

@@ -13,8 +13,10 @@ body {
     --chocolate: #813b33;
     --darkbrown: #580e0e;
     --ivory: #FFFFF0;
+    --blue: #007bff;
 }
 
+/*Home Page*/
 .bg-light {
     background-color: var(--ivory) !important;
 }
@@ -74,6 +76,43 @@ a.btn.btn-default.navbar-btn {
 
 }
 
+/*Mens Shoe CSS*/
+
+#mshoe-h2 {
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 10%;
+}
+
+#mshoe-create a {
+    color: var(--black);
+    
+}
+
+#mshoe-create a:hover {
+    color: var(--blue);
+    
+}
+
+#men-shoe-img-row {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#men-shoe-icons {
+    margin-top: 10%;
+}
+
+#men-shoe-icons a:hover {
+    color: var(--black);
+}
+
+
+img#men-shoe-img {
+    width: 250px;
+    height: 250px;
+}
+
 hr {
     margin-top: 20%;
 }
@@ -81,4 +120,5 @@ hr {
  
 footer p {
     text-align: center;
+    color: var(--black);
 }
