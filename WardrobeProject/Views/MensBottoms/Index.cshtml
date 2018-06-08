@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2 id="h2-ma">Men's Bottoms</h2>
+<h2>Men's Bottoms</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -16,8 +16,8 @@
 
 
         <div class="col-6">
-            <div class="images">
-                <img src="@Html.DisplayFor(modelItem => item.Photo)" alt="Alternate Text" />
+            <div>
+                <img class="clothing-img" src="@Html.DisplayFor(modelItem => item.Photo)" alt="Alternate Text" />
             </div>
 
             <div class="icons">

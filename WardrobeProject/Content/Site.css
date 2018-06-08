@@ -161,7 +161,9 @@ p.p-detail {
     color: var(--black);
 }
 
-/*Edit Page CSS*/
+.outfit-col {
+    margin-bottom: 5%;
+}
 
 /*Bottom Of Page CSS*/
 hr {

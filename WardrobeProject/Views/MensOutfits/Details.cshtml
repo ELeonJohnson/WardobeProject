@@ -4,43 +4,43 @@
     ViewBag.Title = "Details";
 }
 
-<h2 id="h2-ma">Details</h2>
+<h2>Details</h2>
 
 
     <h4>Men's Outfit Items</h4>
-    <hr />
+
 
     <div class="row">
 
         <div class="col-md-3">
-            <h3 id="detail-outfit"> @Html.DisplayFor(model => model.MensAccessory.Name)</h3>
+            <h3> @Html.DisplayFor(model => model.MensAccessory.Name)</h3>
 
-            <div class="images">
-                <img src="@Html.DisplayFor(model => model.MensAccessory.Photo)" alt="Alternate Text" />
+            <div>
+                <img class="clothing-img" src="@Html.DisplayFor(model => model.MensAccessory.Photo)" alt="Alternate Text" />
             </div>
         </div>
 
         <div class="col-md-3">
-            <h3 id="detail-outfit"> @Html.DisplayFor(model => model.MensTop.Name)</h3>
+            <h3> @Html.DisplayFor(model => model.MensTop.Name)</h3>
 
-            <div class="images">
-                <img src="@Html.DisplayFor(model => model.MensTop.Photo)" alt="Alternate Text" />
+            <div>
+                <img class="clothing-img" src="@Html.DisplayFor(model => model.MensTop.Photo)" alt="Alternate Text" />
             </div>
         </div>
 
         <div class="col-md-3">
-            <h3 id="detail-outfit"> @Html.DisplayFor(model => model.MensBottom.Name)</h3>
+            <h3> @Html.DisplayFor(model => model.MensBottom.Name)</h3>
 
-            <div class="images">
-                <img src="@Html.DisplayFor(model => model.MensBottom.Photo)" alt="Alternate Text" />
+            <div>
+                <img class="clothing-img" src="@Html.DisplayFor(model => model.MensBottom.Photo)" alt="Alternate Text" />
             </div>
         </div>
 
         <div class="col-md-3">
-            <h3 id="detail-outfit"> @Html.DisplayFor(model => model.MensSho.Name)</h3>
+            <h3> @Html.DisplayFor(model => model.MensSho.Name)</h3>
 
-            <div class="images">
-                <img src="@Html.DisplayFor(model => model.MensSho.Photo)" alt="Alternate Text" />
+            <div>
+                <img class="clothing-img" src="@Html.DisplayFor(model => model.MensSho.Photo)" alt="Alternate Text" />
             </div>
         </div>
     </div>

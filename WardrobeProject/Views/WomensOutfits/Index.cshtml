@@ -10,14 +10,14 @@
     @Html.ActionLink("Create New", "Create")
 </p>
 
-<div class="row">
+<div class="row all">
     @foreach (var item in Model)
     {
 
 
         <div class="col-md-3">
-            <div class="images">
-                <img src="@Html.DisplayFor(modelItem => item.WomensAccessory.Photo)" alt="Alternate Text" />
+            <div>
+                <img class="clothing-img" src="@Html.DisplayFor(modelItem => item.WomensAccessory.Photo)" alt="Alternate Text" />
             </div>
             <div class="icons">
                 @Html.ActionLink("Edit", "Edit", new { id = item.WomensOutfitID }) <img src="https://png.icons8.com/color/20/000000/multi-edit.png"> |
@@ -27,20 +27,8 @@
         </div>
 
         <div class="col-md-3">
-            <div class="images">
-                <img src="@Html.DisplayFor(modelItem => item.WomensTop.Photo)" alt="Alternate Text" />
-            </div>
-            <div class="icons">
-                @Html.ActionLink("Edit", "Edit", new { id = item.WomensOutfitID }) <img src="https://png.icons8.com/color/20/000000/multi-edit.png"> |
-                @Html.ActionLink("Details", "Details", new { id = item.WomensOutfitID }) <img src="https://png.icons8.com/ultraviolet/20/000000/search.png"> |
-                @Html.ActionLink("Delete", "Delete", new { id = item.WomensOutfitID }) <img src="https://png.icons8.com/ultraviolet/20/000000/cancel.png">
-            </div>
-        </div>
-
-
-        <div class="col-md-3">
-            <div class="images">
-                <img src="@Html.DisplayFor(modelItem => item.WomensBottom.Photo)" alt="Alternate Text" />
+            <div>
+                <img class="clothing-img" src="@Html.DisplayFor(modelItem => item.WomensTop.Photo)" alt="Alternate Text" />
             </div>
             <div class="icons">
                 @Html.ActionLink("Edit", "Edit", new { id = item.WomensOutfitID }) <img src="https://png.icons8.com/color/20/000000/multi-edit.png"> |
@@ -51,8 +39,20 @@
 
 
         <div class="col-md-3">
-            <div class="images">
-                <img src="@Html.DisplayFor(modelItem => item.WomensSho.Photo)" alt="Alternate Text" />
+            <div>
+                <img class="clothing-img" src="@Html.DisplayFor(modelItem => item.WomensBottom.Photo)" alt="Alternate Text" />
+            </div>
+            <div class="icons">
+                @Html.ActionLink("Edit", "Edit", new { id = item.WomensOutfitID }) <img src="https://png.icons8.com/color/20/000000/multi-edit.png"> |
+                @Html.ActionLink("Details", "Details", new { id = item.WomensOutfitID }) <img src="https://png.icons8.com/ultraviolet/20/000000/search.png"> |
+                @Html.ActionLink("Delete", "Delete", new { id = item.WomensOutfitID }) <img src="https://png.icons8.com/ultraviolet/20/000000/cancel.png">
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <div>
+                <img class="clothing-img" src="@Html.DisplayFor(modelItem => item.WomensSho.Photo)" alt="Alternate Text" />
             </div>
             <div class="icons">
                 @Html.ActionLink("Edit", "Edit", new { id = item.WomensOutfitID }) <img src="https://png.icons8.com/color/20/000000/multi-edit.png"> |

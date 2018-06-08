@@ -4,19 +4,19 @@
     ViewBag.Title = "Details";
 }
 
-<h2 id="h2-ma">Details</h2>
+<h2>Details</h2>
 
 <div>
     <h4>Women's Bottom Item</h4>
-    <hr />
+
 
     <h1 id="detail-h1"> @Html.DisplayFor(model => model.Name)</h1>
 
-    <div class="images">
-        <img src="@Html.DisplayFor(model => model.Photo)" alt="Alternate Text" />
+    <div>
+        <img class="clothing-img" src="@Html.DisplayFor(model => model.Photo)" alt="Alternate Text" />
     </div>
 
-    <p>@Html.DisplayFor(model => model.Occasion) @Html.DisplayFor(model => model.Color)  @Html.DisplayFor(model => model.Type) for @Html.DisplayFor(model => model.Season) </p>
+    <p class="p-detail">@Html.DisplayFor(model => model.Occasion) @Html.DisplayFor(model => model.Color)  @Html.DisplayFor(model => model.Type) for @Html.DisplayFor(model => model.Season) </p>
 
 </div>
 <p>

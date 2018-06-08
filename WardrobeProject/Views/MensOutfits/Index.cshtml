@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2 id="h2-ma">Men's Outfits</h2>
+<h2>Men's Outfits</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -16,9 +16,9 @@
     {
 
 
-    <div class="col-md-3">
-        <div class="images">
-            <img src="@Html.DisplayFor(modelItem => item.MensAccessory.Photo)" alt="Alternate Text" />
+    <div class="col-md-3 outfit-col">
+        <div>
+            <img class="clothing-img" src="@Html.DisplayFor(modelItem => item.MensAccessory.Photo)" alt="Alternate Text" />
         </div>
         <div class="icons">
             @Html.ActionLink("Edit", "Edit", new { id = item.MensOutfitsID }) <img src="https://png.icons8.com/color/20/000000/multi-edit.png"> |
@@ -27,9 +27,9 @@
         </div>
     </div>
 
-    <div class="col-md-3">
-        <div class="images">
-            <img src="@Html.DisplayFor(modelItem => item.MensTop.Photo)" alt="Alternate Text" />
+    <div class="col-md-3 outfit-col">
+        <div>
+            <img class="clothing-img" src="@Html.DisplayFor(modelItem => item.MensTop.Photo)" alt="Alternate Text" />
         </div>
         <div class="icons">
             @Html.ActionLink("Edit", "Edit", new { id = item.MensOutfitsID }) <img src="https://png.icons8.com/color/20/000000/multi-edit.png"> |
@@ -39,9 +39,9 @@
     </div>
 
         
-    <div class="col-md-3">
-        <div class="images">
-            <img src="@Html.DisplayFor(modelItem => item.MensBottom.Photo)" alt="Alternate Text" />
+    <div class="col-md-3 outfit-col">
+        <div>
+            <img class="clothing-img" src="@Html.DisplayFor(modelItem => item.MensBottom.Photo)" alt="Alternate Text" />
         </div>
         <div class="icons">
             @Html.ActionLink("Edit", "Edit", new { id = item.MensOutfitsID }) <img src="https://png.icons8.com/color/20/000000/multi-edit.png"> |
@@ -51,9 +51,9 @@
     </div>
 
 
-    <div class="col-md-3">
-        <div class="images">
-            <img src="@Html.DisplayFor(modelItem => item.MensSho.Photo)" alt="Alternate Text" />
+    <div class="col-md-3 outfit-col">
+        <div>
+            <img class="clothing-img" src="@Html.DisplayFor(modelItem => item.MensSho.Photo)" alt="Alternate Text" />
         </div>
         <div class="icons">
             @Html.ActionLink("Edit", "Edit", new { id = item.MensOutfitsID }) <img src="https://png.icons8.com/color/20/000000/multi-edit.png"> |

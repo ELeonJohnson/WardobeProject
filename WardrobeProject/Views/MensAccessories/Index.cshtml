@@ -4,20 +4,20 @@
     ViewBag.Title = "Index";
 }
 
-<h2 id="h2-ma">Men's Accessories</h2>
+<h2>Men's Accessories</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 
-<div class="row">
+<div class="row all">
     @foreach (var item in Model)
     {
 
 
         <div class="col-md-6">
-            <div class="images">
-                <img src="@Html.DisplayFor(modelItem => item.Photo)" alt="Alternate Text" />
+            <div>
+                <img class="clothing-img" src="@Html.DisplayFor(modelItem => item.Photo)" alt="Alternate Text" />
             </div>
 
             <div class="icons">

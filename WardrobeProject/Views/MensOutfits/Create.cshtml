@@ -12,8 +12,8 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>MensOutfit</h4>
-        <hr />
+        <h4>A New Men's Outfit</h4>
+        
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             @Html.LabelFor(model => model.MensAccessoriesID, "MensAccessoriesID", htmlAttributes: new { @class = "control-label col-md-2" })
@@ -56,7 +56,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to List", "Index") <img src="https://png.icons8.com/ultraviolet/20/000000/circled-left.png">
 </div>
 
 @section Scripts {
