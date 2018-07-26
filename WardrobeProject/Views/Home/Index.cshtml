@@ -6,29 +6,29 @@
    
         <div class="row">
             <div class="col-md-12 intro">
-                <h1 id="home-h1">MVC First - Wardrobe Application</h1>
-                <p>Web Application that manages the contents of your wardrobe. This app allows users to add, edit, view or delete content.</p>
+                <h1 id="home-h1">MVC First - <br /> Wardrobe Application</h1>
+                <p>Web Application that manages the contents of your wardrobe. <br /> This app allows users to add, edit, view or delete content.</p>
             </div>
         </div>
 
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 home-card">
             <h2 class="home-h2">Men's</h2>
-            <p>
+            <p class="card-text">
                 View or add men's clothing starting with shoes.
             </p>
-            <a href='@Url.Action("Index", "MensShoes")' class="btn btn-default navbar-btn">Mens Shoe's &raquo;</a>
+            <a href='@Url.Action("Index", "MensShoes")' class="btn btn-default navbar-btn home-btns mens-btn">Mens Shoe's &raquo;</a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 home-card">
             <h2 class="home-h2">Women's</h2>
-            <p>View or add women's clothing starting with shoes.</p>
-            <a href='@Url.Action("Index", "WomensShoes")' class="btn btn-default navbar-btn">Womens Shoe's &raquo;</a>
+            <p class="card-text">View or add women's clothing starting with shoes.</p>
+            <a href='@Url.Action("Index", "WomensShoes")' class="btn btn-default navbar-btn home-btns womens-btn">Womens Shoe's &raquo;</a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 home-card">
             <h2 class="home-h2">Outfit's</h2>
-            <p>View or create men's or women's outfits.</p>
-            <a href='@Url.Action("Index", "MensOutfits")' class="btn btn-default navbar-btn">Mens Outfit's &raquo;</a>
-            <a href='@Url.Action("Index", "WomensOutfits")' class="btn btn-default navbar-btn">Womens Outfit's &raquo;</a>
+            <p class="card-text">View or create men's outfits. <br /> View or create women's outfits .</p>
+            <a href='@Url.Action("Index", "MensOutfits")' class="btn btn-default navbar-btn home-btns mens-btn">Mens Outfit's &raquo;</a>
+            <a href='@Url.Action("Index", "WomensOutfits")' class="btn btn-default navbar-btn home-btns womens-btn">Womens Outfit's &raquo;</a>
         </div>
     </div>
 </div>
