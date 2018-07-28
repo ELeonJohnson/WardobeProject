@@ -1,60 +1,66 @@
-﻿@import url('https://fonts.googleapis.com/css?family=Roboto');
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
 
 body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    background-color: var(--light-blue);
-    color: var(--dark-blue);
-    font-weight: 900;
     line-height: 2;
+    background-image: url('https://images.unsplash.com/photo-1530411554903-7e745b9f1f6d?ixlib=rb-0.3.5&s=8c6d8bd2c1d5f833c91af67e95b6b2cb&auto=format&fit=crop&w=634&q=80');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 :root {
-    --burgundy: #975072;
-    --green: #586d66;
-    --light-blue: #a1baec;
-    --dark-blue: #464d5f;
-    --brown: #5e5746;
+    --blue: #385BA7;
+    --dark-green: #00668B;
+    --light-blue-grey: #B7CFDC;
+    --light-green: #0391A5;
+    --orange: #F2724C;
+    --black: #273150;
+    --white: #FFFFFF;
 }
 
 /*Home Page*/
-.bg-light {
-    background-color: var(--ivory) !important;
-}
 
 a:hover {
     text-decoration: none;
 }
 
-.navbar-light a.navbar-brand {
-    color: var(--black) !important;
-    font-weight: 600;
+.bg-light {
+    background-color: transparent !important;
 }
 
-a#navbarDropdown.nav-link.dropdown-toggle{
-    color: var(--black);
+ a.navbar-brand {
+    color: var(--white) !important;
+    font-weight: 900;
+}
+
+a.navbar-brand:hover {
+    color: var(--blue) !important;
+}
+
+#navbarDropdown {
+    color: var(--white);
 }
 
 div.dropdown-menu.show {
-    background-color: var(--black);
     text-align: center;
-   
-
+    background-color: transparent;
+    border-color: transparent;
 }
 
 div.dropdown-menu.show a {
-    color: var(--ivory);
     display: block;
-
+    color: var(--white);
 }
 
 div.dropdown-menu.show a:hover {
-    color: var(--nude);
+    color: var(--blue);
+    font-weight: 500;
 }
 
 div.container-fluid {
     margin-bottom: 5%;
-   
 }
 
 .intro {
@@ -62,55 +68,80 @@ div.container-fluid {
     justify-content: center;
     align-items: center;
     padding: 5%;
-    
+    color: var(--white);
+    text-align: center;
 }
 
-#home-h1 {
-    text-align: center;
-    margin-right: 5%;
-}
-
-.intro p {
-    text-align: center;
+#intro-h1 {
+    border: 5px solid transparent;
+    padding: 2rem;
 }
 
 .home-card {
-    padding: 3%;
+    color: var(--white);
+    text-align: center;
+    margin-right: 2rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
 }
 
-.card-text {
-    text-align: center;
+#mens-shoe-card {
+    background-image: url('https://images.unsplash.com/photo-1514590734052-344a18719611?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=29ae532663f4fc9fffa387d96f2eaf72&auto=format&fit=crop&w=500&q=60');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 7rem;
 }
+
+#womens-shoe-card {
+    background-image: url('https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ca4cb0b77a2788bbb2c5218b50744bd&auto=format&fit=crop&w=1063&q=80');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mw-outfit-card {
+    background-image: url('https://images.unsplash.com/photo-1482575832494-771f74bf6857?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6a500377b369fcc1e3370dc43391fbac&auto=format&fit=crop&w=1050&q=80');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 
 a.home-btns {
+    color: white;
+    border-color: white;
     transition: all .2s ease-in-out;
 }
 
-a.womens-btn:hover {
-    background: #8977e3;
-    border-color: #8977e3;
-    color: #e5e1f9;
+a.home-btns:hover {
+    border-color: var(--orange);
+    background: var(--orange);
+    color: var(--white);
 }
-a.mens-btn:hover {
-    background: #e38977;
-    border-color: #e38977;
-    color: #e5e1f9;
+
+/*Outfit CSS Styling*/
+
+.outfit-h2 {
+    color: var(--white);
+    text-align: center;
 }
+
+
+
 
 /*Clothing Display CSS*/
-h2 {
-    text-align: center;
-    color: var(--black);
-    margin-bottom: 10%;
-}
 
 a {
-    color: var(--black);
+    color: var(--white);
     
 }
 
 a:hover {
-    color: var(--blue);
+    color: var(--orange);
     
 }
 
@@ -124,7 +155,7 @@ div.row.all {
 }
 
 .icons a:hover {
-    color: var(--black);
+    color: var(--orange);
 }
 
 
@@ -140,9 +171,6 @@ h4 {
 }
 
 .btn.btn-default {
-    background-color: var(--greybrown);
-    border-color: var(--greybrown);
-    color: var(--ivory);
     margin-top: 2%;
     margin-bottom: 2%;
 }
@@ -192,5 +220,5 @@ hr {
  
 footer p {
     text-align: center;
-    color: var(--black);
+    color: var(--white);
 }
